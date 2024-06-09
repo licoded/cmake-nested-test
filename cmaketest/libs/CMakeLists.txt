@@ -30,8 +30,8 @@ target_link_libraries(${PROJECT_NAME}    #目标：cmaketest
 )
 
 # 9.添加子目录，这样子目录中的CMakeLists.txt才会被调用
-add_subdirectory(subfunc)    # 调用subfunc子目录中的CMakeLists.txt，生成静态库而不生成新目标，目标与主CMakeLists.txt中设定的一致
-add_subdirectory(unit-test)   # 调用unit-test子目录中的CMakeLists.txt，生成新目标，目标与主CMakeLists.txt中设定的无关，仅仅是调用
+add_subdirectory(libs/src/subfunc)    # 调用subfunc子目录中的CMakeLists.txt，生成静态库而不生成新目标，目标与主CMakeLists.txt中设定的一致
+add_subdirectory(libs/src/unit-test)   # 调用unit-test子目录中的CMakeLists.txt，生成新目标，目标与主CMakeLists.txt中设定的无关，仅仅是调用
 # Q: 凭什么一个与主CMakeLists.txt中的设定一致，一个无关
 # Q: 又怎么控制是生成静态库，还是生成新目标？
 # Suppose: 都是在子目录的CMakeLists.txt中设置即可

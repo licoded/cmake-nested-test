@@ -1,5 +1,5 @@
-#include "subfunc.h"
-#include "subsubfunc.h"
+#include "subfunc/subfunc.h"
+#include "subfunc/subsubfunc/subsubfunc.h"
 #include <iostream>
 #include <string>
 

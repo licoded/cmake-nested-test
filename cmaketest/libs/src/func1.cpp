@@ -1,4 +1,4 @@
-#include "subfunc.h"   //subfunc头文件
+#include "subfunc/subfunc.h"   //subfunc头文件
 #include "func1.h"     //应用层头文件1
 #include <iostream>
 #include <string>
