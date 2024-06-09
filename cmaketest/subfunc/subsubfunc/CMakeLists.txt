@@ -11,3 +11,4 @@ MESSAGE(STATUS "subsubfunc层头文件路径 :${SUB_SUB_INCLUDE_DIR}")
 
 # 3.生成静态库
 add_library(subsubfunc ${SUB_SUB_DIR_SRC_LIST})
+# Q: 确定最终生成的是静态库，默认不是动态库吗？？？
