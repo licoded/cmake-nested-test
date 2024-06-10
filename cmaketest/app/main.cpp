@@ -5,6 +5,10 @@
 
 int main(int argc, char *argv[])
 {
+#ifdef DEBUG
+    std::cout << "with DEBUG defined" << std::endl;
+#endif
+    std::cout << "Modified main.cpp" << std::endl;
     func1();  //调用上层func1
     func2();  //调用上层func2
     return 0;
