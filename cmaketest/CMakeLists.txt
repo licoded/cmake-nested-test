@@ -17,7 +17,7 @@ set(LIBRARY_INCLUDE_PATH ${PROJECT_SOURCE_DIR}/libs/include)
 
 # 9.添加子目录，这样子目录中的CMakeLists.txt才会被调用
 add_subdirectory(app)
-add_subdirectory(libs/src)
+add_subdirectory(libs)
 add_subdirectory(libs/unit-test)
 # Q: 凭什么一个与主CMakeLists.txt中的设定一致，一个无关
 # Q: 又怎么控制是生成静态库，还是生成新目标？
