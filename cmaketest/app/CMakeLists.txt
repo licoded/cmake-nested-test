@@ -10,7 +10,5 @@ ADD_EXECUTABLE(${PROJECT_NAME} ${SRC_LIST})
 
 # 8.设置编译时依赖的subfunc静态库
 target_link_libraries(${PROJECT_NAME}    #目标：cmaketest
-    two_func
-    subfunc        # sub子目录下的静态库文件
-    subsubfunc     # subsub子目录下的静态库文件
+    myfuncs
 )
